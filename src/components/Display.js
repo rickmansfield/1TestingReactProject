@@ -11,16 +11,18 @@ const Display = (props) => {
 
     const { displayFunc } = props;
     const handleClick = () => {
-        fetchShow().then(data => {
-            setShow(data);
-
-            if (displayFunc) {
-                displayFunc();
-            }
-
-        });
+        fetchShow()
+            .then(data => {
+                setShow(data);
+                if (displayFunc) {
+                    displayFunc();
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            });
     }
-        
+
     const handleSelect = e => {
         setSelectedSeason(e.target.value);
     };
@@ -28,8 +30,8 @@ const Display = (props) => {
     return (
         <div>
             <img className="poster-img" src='http://static.tvmaze.com/uploads/images/original_untouched/200/501942.jpg' alt="header image" />
-            <br/>
-            { !show ? <button onClick={handleClick}>Press to Get Show Data</button> :<Show show={show} selectedSeason={selectedSeason} handleSelect={handleSelect}/> }
+            <br />
+            {!show ? <button onClick={handleClick}>Press to Get Show Data</button> : <Show show={show} selectedSeason={selectedSeason} handleSelect={handleSelect} />}
         </div>
     );
 }
