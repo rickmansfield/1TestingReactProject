@@ -13,6 +13,7 @@ This module explored passing props into test components, rerendering components 
     - [The Display Component](#the-display-component)
     - [Stretch goals](#stretch-goals)
   - [Rick Mansfield's Pull/push trail for Project Testing React](#rick-mansfields-pullpush-trail-for-project-testing-react)
+  - [Corected API URL](#corected-api-url)
   - [class Questions](#class-questions)
   - [Questions to ask yourself to create good Tests](#questions-to-ask-yourself-to-create-good-tests)
   - [What are some Possible unit Tests for MissionFrom.js?](#what-are-some-possible-unit-tests-for-missionfromjs)
@@ -81,6 +82,8 @@ Get the project fired up and start using it as a user would. Try to go through t
 
 - [Link for convenience](https://github.com/LambdaSchool/web-module-project-testing-react/pull/65)
 
+## Corected API URL
+Please note I found a "minus" where a "plus" should be in today's API URL. Here is the corrected URL that worked for me. https://api.tvmaze.com/singlesearch/shows?q=stranger+things&embed=episodes 
 ## class Questions 
 1.  **What is end to end testing?**
     1.  End-to-end testing is a technique that tests the entire software product from beginning to end to ensure the application flow behaves as expected. It defines the product’s system dependencies and ensures all integrated pieces work together as expected. The main purpose of End-to-end (E2E) testing is to test from the end user’s experience by simulating the real user scenario and validating the system under test and its components for integration and data integrity. End-To-End (E2E) testing is a technique used to test an entire flow as if we were an actual user by simulating their actions (clicks, pressing certain keys, typing into a field, etc).
