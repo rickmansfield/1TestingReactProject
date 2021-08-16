@@ -18,6 +18,9 @@ This module explored passing props into test components, rerendering components 
   - [Questions to ask yourself to create good Tests](#questions-to-ask-yourself-to-create-good-tests)
   - [What are some Possible unit Tests for MissionFrom.js?](#what-are-some-possible-unit-tests-for-missionfromjs)
   - [Arrange Act Assert](#arrange-act-assert)
+  - [Project Link](#project-link)
+  - [Key Terminology:](#key-terminology)
+  - [Reference Materials:](#reference-materials)
 
 ## Objectives
 - Understand how to test the effects of passing specific props into a component
@@ -119,3 +122,22 @@ Please note I found a "minus" where a "plus" should be in today's API URL. Here 
 1. Arrange: Setup the react components to be tested. 
 2. Act: Execute the behaviour (if there is one) and extract what is being tested. 
 3. Assert: Check to see if the expected responses occur. 
+
+## Project Link
+
+- [Link](https://github.com/LambdaSchool/web-module-project-testing-react)
+
+## Key Terminology:
+
+1.  [mock functions - Function placeholders use to monitor function execution within a test.](https://jestjs.io/docs/en/mock-functions.html)
+2.  [mock spys - Function placeholders that mock the execution of external libraries](https://silvenon.com/blog/mocking-with-jest/functions)
+3.  [rerender - A react testing library module use to render a component more then once in a test.](https://testing-library.com/docs/react-testing-library/api/#rerender)
+4.  [async / await - A javascript syntax that allows simpler, cleaner async code.](https://javascript.info/async-await)
+5.  [wait / waitFor - React testing library modules that allow a component test to wait until an async call or state chance occurs.](https://testing-library.com/docs/dom-testing-library/api-async/)
+
+## Reference Materials:
+
+1. [React Testing Library query cheatsheet](https://testing-library.com/docs/react-testing-library/cheatsheet/)
+2. [Jest expect functions](https://jestjs.io/docs/en/expect.html)
+3. [Jest Mock functions reference](https://www.w3resource.com/jest/mock-functions-api-reference.php)
+4. [User Event Testing Reference](https://testing-library.com/docs/ecosystem-user-event/)
