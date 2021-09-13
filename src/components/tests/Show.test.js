@@ -60,6 +60,7 @@ test('renders same number of options seasons are passed in', () => {
     //Act - const/screen
     const seasonSelection = screen.getAllByTestId("season-option");//found in Show.js
     //Assert - expect
+        //note that we're only working with one show namely Stranger Things. And in this case there are only 4 seasons to choose from... so. 
     expect(seasonSelection.length).toBe(4);
     expect(seasonSelection.length === 4).toBeTruthy();
 });
