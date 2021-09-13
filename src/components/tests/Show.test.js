@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 
 import Show from './../Show';
 //1. Build an example data structure that contains the show data in the correct format. A show should contain a name, a summary and an array of seasons, each with a id, name and (empty) list of episodes within them. Use console.logs within the client code if you need to to verify the structure of show data.
-//NOTE NOTE NOTE I had to console.log('FETSH SHOW DATA',data); on line 29 of fetchShow.js to get the proper structure. I started by mimicking the format from lines 24-37 of fetchShow.js and expanding that to inclue the data I found on the console.log
+//NOTE NOTE NOTE I had to console.log('FETCH SHOW DATA',data); on line 29 of fetchShow.js to get the proper structure. I started by mimicking the format from lines 24-37 of fetchShow.js and expanding that to inclue the data I found on the console.log
 const testShow = {
     //add in approprate test data structure here.
 
